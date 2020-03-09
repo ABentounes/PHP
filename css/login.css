@@ -21,6 +21,7 @@ main{
 form {
     width: 700px;
     height: 500px;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     border: 1px solid lightblue;
@@ -48,12 +49,23 @@ form div {
     align-content: space-around;
     justify-content: space-around;
     align-items: center;
+    border-radius: 30px;
     background-color: red;
     height: 300px;
     width: 200px;
 }
 
-form input[type=text] {
+#rightSide p{
+    text-align: center;
+    margin: 0px 5px
+}
+
+#rightSide label{
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
     width: 150px;
 }
 
@@ -66,3 +78,14 @@ form input[type=submit] {
     background: linear-gradient(270deg, #ee3838, #3846df);
 }
 
+.none {
+    display: none;
+}
+
+span{
+    color: #3846df;
+}
+span:hover {
+    color: #ee3838;
+    cursor: pointer;
+}

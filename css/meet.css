@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.profile {
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 80vw;
+    background-color: rgb(255, 194, 229);
+    border-radius: 30px;
+}
+
+.profile h1{
+    width: 100%;
+    position: relative;
+    top: 30px;
+    margin-top: 40px;
+    text-align: center;
+    height: 70px;
+}
+
+.content{
+    width: 50%;
+    height: 90%;
+    font-size: 20px;
+}
+
+
+.profile div{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    border-radius: 50%;
+}

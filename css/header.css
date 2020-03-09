@@ -15,11 +15,12 @@ nav>ul {
 
 nav li {
     text-align: center;
+    vertical-align: middle;
     width: 120px;
     height: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     list-style-type: none;
     border: solid 1px;
     border-radius: 30px;
@@ -28,6 +29,8 @@ nav li {
 
 
 nav a {
+    height: 100%;
+    width: 100%;
     text-decoration: none;
     color: white;
 }

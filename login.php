@@ -12,23 +12,47 @@
 <body>
     <?php include_once './templates/header.php' ?>
     <main class="flex">
-        <form action="./controllers/log.php" class="flex" method="POST">
-        <div id="leftSide">
-            <div id="circle"></div>
-        </div>
-        <div id="rightSide" class="flex">
-            <h1>Login</h1>
-            <div>
-                <label for="name">Ton Nom</label><br>
-                <input type="text" name="name" autocomplete="off">
+        <form action="./controllers/log.php" class="flex" method="POST" id="loginForm">
+            <div id="leftSide">
+                <div id="circle"></div>
             </div>
-            <input type="submit" value="Connection">
+            <div id="rightSide" class="flex">
+                <h1>Login</h1>
+                <div>
+                    <label for="name">Ton Nom
+                    <input type="text" name="name" autocomplete="off">
+                    </label>
+                </div>
+                <input type="submit" value="Connection">
+            </div>
+            <p>Si vous n'avez pas de compte, <span>cliquez ici pour vous inscrire</span></p>
         </form>
-        </div>
+
+        <form action="./controllers/log.php" class="flex none" method="POST" id="registerForm">
+            <div id="leftSide">
+                <div id="circle"></div>
+            </div>
+            <div id="rightSide" class="flex">
+                <h1>Inscription</h1>
+                <label for="name">Ton Nom
+                    <input type="text" name="name" autocomplete="off">
+                </label>
+                <label for="email">Ton email
+                    <input type="email" name="email" autocomplete="off">
+                </label>
+                <label for="password">Ton Mot de Passe
+                    <input type="password" name="password" autocomplete="off">
+                </label>
+                <input type="submit" value="Connection">
+            </div>
+            <p>Si vous avez déjà un compte, <span>cliquez ici pour vous connecter</span></p>
+        </form>
+
     </main>
     <footer>
 
     </footer>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>

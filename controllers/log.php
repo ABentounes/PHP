@@ -27,3 +27,4 @@ foreach ($users as $user) {
 }
 
 header('Location:../login.php');
+  

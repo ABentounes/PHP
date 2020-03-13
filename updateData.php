@@ -1,6 +1,5 @@
 <?php include './controllers/getOneUser.php'?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 

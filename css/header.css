@@ -14,21 +14,31 @@ nav>ul {
 }
 
 nav li {
-    text-align: center;
-    vertical-align: middle;
     width: 120px;
     height: 40px;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
     border: solid 1px;
     border-radius: 30px;
     background-color: thistle;
 }
 
+nav li>* {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-nav a {
+nav span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     text-decoration: none;
@@ -44,12 +54,11 @@ nav li:hover {
     display: inline-block;
 }
 
-
-.dropdownContent{
+.dropdownContent {
     display: none;
     position: absolute;
 }
 
 .dropdown:hover .dropdownContent {
     display: block;
-  }
+}

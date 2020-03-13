@@ -14,14 +14,14 @@
   <main class="flex">
     <?php if (!isset($_SESSION['name'])) : ?>
       <div>
-        <h1 class="title">Bienvenue</h1>
+        <h1 class="title">Bienvenu</h1>
       </div>
       <div>
         <p>Merci de bien vouloir vous connecter</p>
       </div>
     <?php else : ?>
 
-      <h1 class="title">Bienvenue <?= $_SESSION['name'] ?></h1>
+      <h1 class="title">Bienvenu <?= $_SESSION['name'] ?></h1>
 
       <?php if ($_SESSION['imgCheck'] == 'imgOn') : ?>
         <img src="./images/friends.jpg" alt="Yo les bros c'est LRB">

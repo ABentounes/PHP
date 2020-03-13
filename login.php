@@ -22,26 +22,32 @@
                     <label for="name">Ton Nom
                     <input type="text" name="name" autocomplete="off">
                     </label>
+                    <label for="password">Mot de Passe
+                    <input type="password" name="password" autocomplete="off">
+                    </label>
                 </div>
                 <input type="submit" value="Connection">
             </div>
             <p>Si vous n'avez pas de compte, <span>cliquez ici pour vous inscrire</span></p>
         </form>
 
-        <form action="./controllers/log.php" class="flex none" method="POST" id="registerForm">
+
+
+
+        <form action="./controllers/inscription.php" class="flex none" method="POST" id="registerForm">
             <div id="leftSide">
                 <div id="circle"></div>
             </div>
             <div id="rightSide" class="flex">
                 <h1>Inscription</h1>
                 <label for="name">Ton Nom
-                    <input type="text" name="name" autocomplete="off">
-                </label>
-                <label for="email">Ton email
-                    <input type="email" name="email" autocomplete="off">
+                    <input type="text" name="name" autocomplete="off" required>
                 </label>
                 <label for="password">Ton Mot de Passe
-                    <input type="password" name="password" autocomplete="off">
+                    <input type="password" name="password" autocomplete="off" required>
+                </label>
+                <label for="description">Ta description
+                    <input type="text" name="description" autocomplete="off" required>
                 </label>
                 <input type="submit" value="Connection">
             </div>

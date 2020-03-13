@@ -21,6 +21,10 @@
             <label for="keepDescription">Description
                 <input type="checkbox" value="descOn" name="descCheck" <?= ($_SESSION['descCheck'] == 'descOn') ? 'checked' : '' ?>>
             </label>
+            <?php var_dump($_SESSION) ?>
+            <label for="changeDesc">
+                <textarea name="profileDesc" cols="70" rows="10">  </textarea>
+            </label>
             <button type="submit">Sauvegarder les préférences</button>
         </form>
     </main>
